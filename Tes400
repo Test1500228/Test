@@ -1767,7 +1767,6 @@ local Input = MainTab:CreateInput({
    OnEnter = true, -- Will callback only if the user pressed ENTER while being focused on the the box.
    RemoveTextAfterFocusLost = false, -- Speaks for itself.
    Callback = function(Text)
-       ga!e.Players.LocalPlayer.Character.Humanoid.WalkSpeed = text
+       game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = text
    end,
 })
-
