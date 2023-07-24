@@ -1758,15 +1758,3 @@ local Button = MainTab:CreateButton({
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
     end,
 })
-
-local Input = MainTab:CreateInput({
-   Name = "Speed Input Test",
-   PlaceholderText = "Input Placeholder",
-   NumbersOnly = true, -- If the user can only type numbers. Remove or set to false if none.
-   CharacterLimit = 15000, --max character limit. Remove or set to false
-   OnEnter = true, -- Will callback only if the user pressed ENTER while being focused on the the box.
-   RemoveTextAfterFocusLost = false, -- Speaks for itself.
-   Callback = function(Text)
-       game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = text
-   end,
-})
